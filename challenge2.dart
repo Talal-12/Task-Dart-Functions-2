@@ -1,3 +1,8 @@
+void main() {
+  bool result = isOdd(7);
+  print result;
+}
+
 /**
  * greet(name):
  * - receives a name,
@@ -21,6 +26,10 @@ void greet(String name) {
  */
 bool isOdd(int n) {
   // Your code here
+  if (n % 2 == 0) {
+    return false;
+  } else
+    return true;
 }
 
 /**
@@ -48,4 +57,5 @@ int oddsSmallerThan(int n) {
  */
 int squareOrDouble(int n) {
   // Your code here
+  return isOdd(n) ? n * n : n * 2;
 }
